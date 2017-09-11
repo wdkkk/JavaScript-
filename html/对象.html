@@ -1,0 +1,212 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta content="text/css" http-equiv="Content-Style-Type">
+<title>对象</title>
+<style type="text/css">span.s1 {background-color: #FFFFFF; color: #038003; font-size: 12pt; font-weight: bold}</style>
+</head>
+<body>
+<h1 align="center" class="root">
+<a name="4ss90pqk98018sch2ii0j8243c">对象</a>
+</h1>
+<div align="center" class="globalOverview">
+<img src="%E5%AF%B9%E8%B1%A1_files/images/%E5%AF%B9%E8%B1%A1.jpg"></div>
+<h2 class="topic">
+<a name="5l6gmp6ac0sqsni4a9ldfm8j4s">创建对象</a>
+</h2>
+<h3 class="topic">
+<a name="1u2upnt6h8lg3l9rebt0j678t0">&nbsp;对象直接量</a>
+</h3>
+<h3 class="topic">
+<a name="2bv9qhhgsdo9fvc6sb5olp93d4">&nbsp;通过new 创建</a>
+</h3>
+<h3 class="topic">
+<a name="3199grqv2ncedv3lrqt4oru42l">&nbsp;Object.create()</a>
+</h3>
+<h3 class="topic">
+<a name="2b7of936k4l1tro1i6vvnj6d1p">&nbsp;&nbsp;传入的第一个参数将作为新对象的原型</a>
+</h3>
+<div class="notesContainer">
+<p>
+<span class="s1">1.实现继承</span>
+</p>
+<p>
+<span class="s1">2.Object.create(Object.prototype)//等同于new Object（）和{ }</span>
+</p>
+</div>
+<h2 class="topic">
+<a name="5943rbbmmahp1qsl3sr3pksbjr">三个固有属性</a>
+</h2>
+<h3 class="topic">
+<a name="0n7d6flr9bsrsf82ct68qfld40">&nbsp;prototype</a>
+</h3>
+<h3 class="topic">
+<a name="7fd1ca30mkatfp5u40lfsvtp9q">&nbsp;&nbsp;获取：Object.getPrototypeOf()</a>
+</h3>
+<h3 class="topic">
+<a name="57prne53c5gricgjv1pq1hcm6j">&nbsp;&nbsp;判断:p.isPrototypeOf(o)</a>
+</h3>
+<h3 class="topic">
+<a name="4kvdpv161cju0jqn0lmdfcjele">&nbsp;class</a>
+</h3>
+<h3 class="topic">
+<a name="41li771mpehj66p4ndo2g1ri9a">&nbsp;&nbsp;查询：toString()</a>
+</h3>
+<h3 class="topic">
+<a name="15l2h8tnrh3s6bufu2cc7n6qmc">&nbsp;extensible attribute</a>
+</h3>
+<h3 class="topic">
+<a name="0au7g70p50lvu9ofhl0njaools">&nbsp;&nbsp;判断：Object.isExsible()</a>
+</h3>
+<h3 class="topic">
+<a name="6t79v6dgqvemu5hsuiads1p4bm">&nbsp;&nbsp;设为不可扩展(不可逆，不会传播至原型)：Object.preventExtensions()</a>
+</h3>
+<h3 class="topic">
+<a name="4e01ehvp4s8g2feluugn2r4ukh">&nbsp;&nbsp;Object.seal() 讲对象设置为不可扩展且所有自有属性设置为不可配置，</a>
+</h3>
+<h3 class="topic">
+<a name="10dd03mi771ld51jnh93jr6j2t">&nbsp;&nbsp;&nbsp;不可逆，可用Object.isSealed()检测</a>
+</h3>
+<h3 class="topic">
+<a name="47otbm5ct2ceukeh5nc9on9gta">&nbsp;&nbsp;Object.freeze()讲对象设置为不可扩展且其他属性设置为不可配置，自有属性设置为只读，存储器属性的setter不受影响</a>
+</h3>
+<h3 class="topic">
+<a name="152l07nuhdhnmk3940hckvo1al">&nbsp;&nbsp;&nbsp;可用Object.isFrozen()检测</a>
+</h3>
+<h2 class="topic">
+<a name="00au3vjgbhstff9egdqh3k66tp">对象序列化</a>
+</h2>
+<h3 class="topic">
+<a name="0c1v4dh2gqp3n9of2ganmd7dmf">&nbsp;JSON.stringify()</a>
+</h3>
+<h3 class="topic">
+<a name="7uh8daaq41icsrcl4k5070oe9q">&nbsp;JSON.parse()</a>
+</h3>
+<h2 class="topic">
+<a name="6pov86d6lgq09qfop8r9d9dun4">对象属性操作</a>
+</h2>
+<h3 class="topic">
+<a name="31mh0nltagi995076je34o11uu">&nbsp;查询</a>
+</h3>
+<h3 class="topic">
+<a name="7cgb335sc3fvn8e9p0dbvmf5cq">&nbsp;&nbsp;点运算符</a>
+</h3>
+<h3 class="topic">
+<a name="6dthsdo2jp47qlbcihvqf2q9ci">&nbsp;&nbsp;方括号运算符</a>
+</h3>
+<h3 class="topic">
+<a name="6hoo7ff4sr4bhq555r17c8fhub">&nbsp;&nbsp;原型链查询</a>
+</h3>
+<h3 class="topic">
+<a name="6o6cb11d8jq6euilveu0819bjs">&nbsp;设置</a>
+</h3>
+<h3 class="topic">
+<a name="56tgkhbdujb5tivtbmcb06vq40">&nbsp;&nbsp;如果对象已经存在该非继承属性，则重新赋值</a>
+</h3>
+<h3 class="topic">
+<a name="7qm20h8vlla2e31vg7dqennnq6">&nbsp;&nbsp;如果对象不存在该属性，将添加这个属性，并且覆盖继承来的同名属性</a>
+</h3>
+<h3 class="topic">
+<a name="706no5mlrcbr7tn9bfins2p7rm">&nbsp;&nbsp;给只读属性赋值会失败&#13;
+给null和undefined赋值会报错；&#13;
+给Object.prototype赋值会失败，但不报错，这个bug在es5的严格模式被修复</a>
+</h3>
+<h3 class="topic">
+<a name="234mgsbt2e6nj02n01j9j938fb">&nbsp;删除</a>
+</h3>
+<h3 class="topic">
+<a name="660bvgnd1tfb2khs2go2huhkrt">&nbsp;&nbsp;delete 删除成功或没有副作用时返回true</a>
+</h3>
+<h3 class="topic">
+<a name="6j1598o9p9bs86as485upvhe5e">&nbsp;检测</a>
+</h3>
+<h3 class="topic">
+<a name="7jb0j9vkfsg1g8kdc1g14g06go">&nbsp;&nbsp;in运算符 检测自有属性和继承属性</a>
+</h3>
+<h3 class="topic">
+<a name="30vqcdub7ieb5hplaropmenqck">&nbsp;&nbsp;hasOwnProperty( ) 检测自有属性</a>
+</h3>
+<h3 class="topic">
+<a name="6on6879ssffmaqhq6phlcas54h">&nbsp;&nbsp;propertyIsEnumerable( )检测自有且可枚举属性</a>
+</h3>
+<h3 class="topic">
+<a name="5jgvgdj7epmtm1fobntmhekbn4">&nbsp;遍历</a>
+</h3>
+<h3 class="topic">
+<a name="1n96fk09rj0kqi2mbkkmf45653">&nbsp;&nbsp;for/in 遍历所有可枚举属性，包括自有和继承属性</a>
+</h3>
+<h3 class="topic">
+<a name="1b3rgnc5lttgifv6ml1s2fvp54">&nbsp;&nbsp;Object.keys( )返回包含所有可枚举的自有属性数组</a>
+</h3>
+<h3 class="topic">
+<a name="598eq49f1csj868jaloj8ul28f">&nbsp;&nbsp;Object.getOwnPropertyNames( ) 返回所有自有属性的名称</a>
+</h3>
+<h3 class="topic">
+<a name="4ulgrjj13s23teqrtfkf85p441">&nbsp;存取器属性</a>
+</h3>
+<h3 class="topic">
+<a name="7rdht8640g00u0t8hcig47381m">&nbsp;&nbsp;setter</a>
+</h3>
+<h3 class="topic">
+<a name="5f5p0hch6q9nu35plbhhalii67">&nbsp;&nbsp;getter</a>
+</h3>
+<h2 class="topic">
+<a name="71jib8tauf12kb001grd7a65ch">属性特性</a>
+</h2>
+<h3 class="topic">
+<a name="27rv90564q3ujt0v24d8v2cpd5">&nbsp;数据属性</a>
+</h3>
+<h3 class="topic">
+<a name="1v39qr75cgtkack3m6qd70v6u7">&nbsp;&nbsp;值（value）</a>
+</h3>
+<h3 class="topic">
+<a name="2700am0kc7k5lhuplli3ald7rc">&nbsp;&nbsp;可写性（writable）</a>
+</h3>
+<h3 class="topic">
+<a name="7v3fogc91qp467693bnqmbilgg">&nbsp;&nbsp;可枚举型（enumerable）</a>
+</h3>
+<h3 class="topic">
+<a name="7vl03h8k0k4heo6561os8levk4">&nbsp;&nbsp;可配置性（configurable）</a>
+</h3>
+<h3 class="topic">
+<a name="74kmhol2erc4r5an13pb7cg26c">&nbsp;存取器属性</a>
+</h3>
+<h3 class="topic">
+<a name="5cefg8hdnuobgb07i6fachisgq">&nbsp;&nbsp;读（get）</a>
+</h3>
+<h3 class="topic">
+<a name="23irrkjuccl34ssfofcuv3rsm5">&nbsp;&nbsp;写（set）</a>
+</h3>
+<h3 class="topic">
+<a name="2td98grr0ofpg4ug8bkrtv3iof">&nbsp;&nbsp;可枚举型（enumerable）</a>
+</h3>
+<h3 class="topic">
+<a name="46si56sbgc90sn2qdvrql28s01">&nbsp;&nbsp;可配置性（configurable）</a>
+</h3>
+<h3 class="topic">
+<a name="1fdbcf9dvrte54o3qcpvmfjvkk">&nbsp;&nbsp;&nbsp;设置属性描述符 Object.defineProperty( )或者Object.defineProperties()</a>
+</h3>
+<h3 class="topic">
+<a name="3nlkno679fonfntacqe0ikq30e">&nbsp;属性描述符</a>
+</h3>
+<h3 class="topic">
+<a name="5a5s4svp38navobtr9slilb710">&nbsp;&nbsp;Object.getOwnPropertyDescriptor() 获取对象某个属性的描述符</a>
+</h3>
+<h2 class="topic">
+<a name="35idc9qf4cc5u5q6bffh7iut0s">对象方法</a>
+</h2>
+<h3 class="topic">
+<a name="3j1l3k2hgvpn4drsvl623v70rc">&nbsp;toString() 返回对象的字符串表示</a>
+</h3>
+<h3 class="topic">
+<a name="3v8boadha9q7dcddpmn66gbo9r">&nbsp;toLocaleString()返回对象的本地化字符串表示</a>
+</h3>
+<h3 class="topic">
+<a name="7kjuc2jhgfsqer7fnce7gabqch">&nbsp;toJSON()没有在Object.prototype（）中定义，调用JSON.stringify()时会调用这个方法</a>
+</h3>
+<h3 class="topic">
+<a name="1elgri5v2kjgtgv8j6ci8aph5h">&nbsp;valueOf()和toString()类似，但他返回的是原始值 比如数字 1 而不是&lsquo;1&rsquo;</a>
+</h3>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta content="text/css" http-equiv="Content-Style-Type">
+<title>数组</title>
+</head>
+<body>
+<h1 align="center" class="root">
+<a name="62gh83oahdje4f9v3pts6fvqkr">数组</a>
+</h1>
+<div align="center" class="globalOverview">
+<img src="%E6%95%B0%E7%BB%84_files/images/%E6%95%B0%E7%BB%84.jpg"></div>
+<h2 class="topic">
+<a name="3al3t5rvh46coj4e2dj90crtdu">基础</a>
+</h2>
+<h3 class="topic">
+<a name="012tueak71sepodg00ur0vovnu">&nbsp;数组元素是任意类型的</a>
+</h3>
+<h3 class="topic">
+<a name="39vfpsalp2t3hv2uh51j3g7lor">&nbsp;最大索引（2^32-2）</a>
+</h3>
+<h2 class="topic">
+<a name="56p04lrioaa2pmigpro5ptd12p">创建</a>
+</h2>
+<h3 class="topic">
+<a name="6lq02jfj4t125eqnhcchdn3gvt">&nbsp;直接量</a>
+</h3>
+<h3 class="topic">
+<a name="2tqtjp40tn89qdiui5th30hrtt">&nbsp;&nbsp;var arr=[1,1,1]; &#13;
+省略的值为undefined；&#13;
+[ ,  , ]长度为2</a>
+</h3>
+<h3 class="topic">
+<a name="3328c4k1v1hr7nnjet1gptrjsa">&nbsp;构造函数Array（）</a>
+</h3>
+<h3 class="topic">
+<a name="439shbs0deelpuaao89mg063do">&nbsp;&nbsp;new Array（）空数组 等于 [ ];</a>
+</h3>
+<h3 class="topic">
+<a name="5s5upbb4jml9i08aevjk499sas">&nbsp;&nbsp;new Array(10) 指定长度，注意此时元素的索引尚未定义</a>
+</h3>
+<h3 class="topic">
+<a name="5blo1bbst2e1dv34cb72m16kp6">&nbsp;&nbsp;new Array(item1,item2) </a>
+</h3>
+<h3 class="topic">
+<a name="7rd1hfsnn2l6a8fmq55ub1845p">&nbsp;稀疏数组 </a>
+</h3>
+<h3 class="topic">
+<a name="0raq8k3b7kgntj8lc86vd532km">&nbsp;&nbsp;length&gt;元素个数</a>
+</h3>
+<h3 class="topic">
+<a name="1it79pufna68718ddh00fsprog">&nbsp;length属性</a>
+</h3>
+<h3 class="topic">
+<a name="2fplh208fuepm3nkdgepeqkmn8">&nbsp;&nbsp;当设置length小于数组当前长度时，索引值大于等于length的元素被删除</a>
+</h3>
+<h2 class="topic">
+<a name="75m2emerbe1eh556ihnnju41qc">基本方法</a>
+</h2>
+<h3 class="topic">
+<a name="3lqjd9trfm47t69arceemf0o10">&nbsp;添加</a>
+</h3>
+<h3 class="topic">
+<a name="4ca0a1416iuhhvk0hntushh583">&nbsp;&nbsp;索引赋值</a>
+</h3>
+<h3 class="topic">
+<a name="7g8p7mfjj3rcpm9e800c0g8gub">&nbsp;&nbsp;push( ) 末尾添加，返回新长度</a>
+</h3>
+<h3 class="topic">
+<a name="0meek3h1fjbf3lji40clgb2uqm">&nbsp;&nbsp;unshift( )首部添加，返回新长度</a>
+</h3>
+<h3 class="topic">
+<a name="6mpmqbg98nalbs4dqtqveg6t0c">&nbsp;删除</a>
+</h3>
+<h3 class="topic">
+<a name="3172e4gktlrs3t5gq8d8nn3ihp">&nbsp;&nbsp;delete 删除元素，不会改变length长度</a>
+</h3>
+<h3 class="topic">
+<a name="3ic8vi6um16gi5ik0c2a1996jo">&nbsp;&nbsp;pop( )末尾删除，返回删除的元素</a>
+</h3>
+<h3 class="topic">
+<a name="63bscogdomu1lllfb3kptajs1i">&nbsp;&nbsp;shift( )首部删除，返回删除的元素</a>
+</h3>
+<h3 class="topic">
+<a name="62k2gedtghng4dls7q99rj7ip7">&nbsp;join( )：把数组中所有元素转换成字符串连接在一起返回，可以指定一个间隔符</a>
+</h3>
+<h3 class="topic">
+<a name="448bp2dnep0urfkaahf8dlbu9o">&nbsp;reverse( ) :数组逆序，改变原数组</a>
+</h3>
+<h3 class="topic">
+<a name="7pt76jjq364i14hs8llo49o200">&nbsp;sotr( )</a>
+</h3>
+<h3 class="topic">
+<a name="31jqbvel6189jl2enkcjn48n8i">&nbsp;&nbsp;不传参数按字母表排序</a>
+</h3>
+<h3 class="topic">
+<a name="7vaps1eg8ei1unl2nlev23nf0k">&nbsp;&nbsp;传入比较函数：function(a,b) {} 如果a在前 返回小于0的数值</a>
+</h3>
+<h3 class="topic">
+<a name="0b606r94ija960uefgp5a5ofn5">&nbsp;concat( ):数组合并 返回新数组</a>
+</h3>
+<h3 class="topic">
+<a name="7cfagaa5omme09o70h4vurc60s">&nbsp;slice( start,end): 数组截取包含start不包含end，不改变原数组</a>
+</h3>
+<h3 class="topic">
+<a name="563njq3rhl2cm7mee21aqdq7eo">&nbsp;spice( start,count) 从起始位置删除count个元素，返回删除的元素，改变原数组</a>
+</h3>
+<h3 class="topic">
+<a name="4gunnv29ldilhqsh9l5h5nr637">&nbsp;栈方法(LIFO)</a>
+</h3>
+<h3 class="topic">
+<a name="2b66dfv90k8laus5fidrqscnsh">&nbsp;&nbsp;push() 入栈</a>
+</h3>
+<h3 class="topic">
+<a name="7fqn18eigj29ng8i1mo84ms2k1">&nbsp;&nbsp;pop() 出栈</a>
+</h3>
+<h3 class="topic">
+<a name="46seke8l8r4srldfnkp033sb8s">&nbsp;队列方法(FIFO)</a>
+</h3>
+<h3 class="topic">
+<a name="5tpg55g1gqu32s9g0orbbopnk9">&nbsp;&nbsp;push()入队</a>
+</h3>
+<h3 class="topic">
+<a name="6o6lrib17tv8jb9lkp3pbgr21p">&nbsp;&nbsp;shift() 出队</a>
+</h3>
+<h3 class="topic">
+<a name="765pr8c01lo0c6nbhamobcd95u">&nbsp;反队列方法(FILO)</a>
+</h3>
+<h3 class="topic">
+<a name="1mbn7lk6kfm3p9t98urlej18bc">&nbsp;&nbsp;unshift()前端入队</a>
+</h3>
+<h3 class="topic">
+<a name="09p22f50gqr334hhu6sdns7roc">&nbsp;&nbsp;pop() 尾端出队</a>
+</h3>
+<h3 class="topic">
+<a name="487hgm9onc7fjrski0988n1h11">&nbsp;toString() 把每个元素装换为字符串，输出用逗号分隔的字符串列表</a>
+</h3>
+<h3 class="topic">
+<a name="7nfhqbtuvj2asg085so16t03bu">&nbsp;toLocaleString()返回本地字符串表示</a>
+</h3>
+<h2 class="topic">
+<a name="1blv39o3hlb1vl2tf7uhp0uqp7">高级方法</a>
+</h2>
+<h3 class="topic">
+<a name="1pnonqiv0u6tqgg8kkjpfcsial">&nbsp;arr.forEach(function(item,index,arr){&#13;
+&#13;
+}) &#13;
+会改变原数组</a>
+</h3>
+<h3 class="topic">
+<a name="3gkfb7pc6fn02qhsi6s7v8ehqh">&nbsp;var anotherArr=arr.map(function(item,index,arr){&#13;
+return &#13;
+})&#13;
+必须有return，不会改变原有数组</a>
+</h3>
+<h3 class="topic">
+<a name="48pajsmf3r4chitkhgscb3l9h4">&nbsp;filter(),返回经过过滤后为true的元素数组，可以用来过滤稀疏数组</a>
+</h3>
+<h3 class="topic">
+<a name="0q0l8pmgi7tc9qkb481kulcn45">&nbsp;every()全为true时返回true和some()至少有一个为true时返回true </a>
+</h3>
+<h3 class="topic">
+<a name="2jo522q5ag4pvh2prt7cljuh67">&nbsp;化简操作</a>
+</h3>
+<h3 class="topic">
+<a name="74esmsq7thdful102umkrtcrt3">&nbsp;&nbsp;reduce()和reduceRight()</a>
+</h3>
+<h3 class="topic">
+<a name="1sglaqs15o3vvq8bpb28ddrq14">&nbsp;indexOf(item,start)和lastIndexOf(item,start) 数组元素搜索</a>
+</h3>
+<h3 class="topic">
+<a name="7ps4bak1t6lni2g50sdjs2urtf">&nbsp;检测数组</a>
+</h3>
+<h3 class="topic">
+<a name="4rdqkvlb53a71avidk06ghmkmu">&nbsp;&nbsp;Array.isArray()</a>
+</h3>
+<h3 class="topic">
+<a name="3qoretv7ua3dnd9th1no9l94j7">&nbsp;&nbsp;instanceof 存在frame的问题</a>
+</h3>
+<h2 class="topic">
+<a name="7ppmup3l39vsukta11sp1kujk6">分支主题 5</a>
+</h2>
+</body>
+</html>
